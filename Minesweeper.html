@@ -1,0 +1,61 @@
+<!DOCTYPE.html>
+<html>
+
+<head>
+    <title>Minesweeper</title>
+    <script src="index.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Kanit:700" rel="stylesheet">
+</head>
+<div>
+
+    <body>
+        <main>
+            <div id="title" class="center">
+                <h1>Minesweeper</h1>
+            </div>
+            <div class="caption">
+                <p>This a fully functional MineSweeper Game</p>
+            </div>
+            <div class="directions">
+                    <p class = "directionsTitle">Directions</p>
+                    <p>Objective: Clear All cells to win game and log Attempt</p>
+                    <p>1. Set Rows, Coloums and Mines</p>
+                    <p>2. Click START GAME or START RANDOM GAME to begin game</p>
+                    <p>3. Free all cells without clicking on mine to win</p>
+                    <p>4. Use Shift + left Click to flag bombs</p>
+                    <p>5. Click on Start Game or Start Random Game to Restart</p>
+            </div>
+
+            <div id="DrawBoard" class = "gameBoard">
+                Rows: <input type="text" name="Rows" id="Rows" value="8">
+                Coloums: <input type="text" name="Coloums" id="Coloums" value="8">
+                Mines: <input type="number" name="Mines" id="Bombs" value="8"><br>
+                <button id="generate" type="button" onclick="setBoard()">Start Game</button>
+                <button id="Rgenerate" type="button" onclick="setRBoard()">Start Random Game</button>
+            </div>
+
+
+
+            <div class="scoreBoard">
+                <div>
+                    Timer/Score: <span id="timer">0<span>
+                </div>
+
+                <div id="scoreB" class="scores">
+                    <p>Scores: </p>
+                </div>
+
+            </div>
+
+            <div id=container>
+                <p id=bombCounter></p>
+                <p id="tagLine"></p>
+                <table id="holder" class="grid"></table>
+            </div>
+        </main>
+    </body>
+
+</div>
+
+</html>
