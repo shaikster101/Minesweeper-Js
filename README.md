@@ -14,7 +14,7 @@
 1. Click on a cell to clear it and adjacent free ones.
 1. Play till you clear the grid 
 1. Its *Game Over* if you click on a bomb!
-1. You can toggle flags on shift + click to track known bombs
+1. You can toggle flags by `shift + click` to track known bombs
 1. Enjoy!
 
 
